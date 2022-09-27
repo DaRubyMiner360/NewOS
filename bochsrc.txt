@@ -1,0 +1,15 @@
+megs: 250
+
+# display_library: x
+
+ata0-master:  type=cdrom, path="os.iso", status=inserted 
+ata0-slave:  type=disk, path="fs.img", status=inserted
+
+# We specify to boot from floppya.
+boot: cdrom
+
+# Logfile
+log: bochsout.txt
+
+# We don't need mouse emulation
+mouse: enabled=0
